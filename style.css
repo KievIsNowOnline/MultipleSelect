@@ -1,0 +1,37 @@
+.select-me-container{
+	border: 1px solid #efefef;
+	width: 300px;
+	height:180px;
+}
+
+.control-panel{
+	margin: 3px 3px 3px 7px;
+}
+
+.control-panel span{
+	padding-right:12px;
+	cursor:pointer;
+}
+
+.option-panel ul{
+	margin:0;
+	list-style: none;
+	padding:0;
+	
+
+}
+
+.option-panel li{
+	border:1px dashed #e6e6e6;
+	padding:7px;
+	cursor:pointer;
+}
+
+.option-panel li:hover{
+	background-color: #e7e7e7;
+}
+	
+
+	.option-panel li.selected{
+		background-color: #B1BBA5;
+	}
