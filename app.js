@@ -1,4 +1,4 @@
-var module = angular.module('myModule', []);
+var app = angular.module('myModule', []);
 
 
-console.log(module);
+console.log(app);

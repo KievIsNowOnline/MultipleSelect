@@ -1,7 +1,7 @@
 .select-me-container{
 	border: 1px solid #efefef;
 	width: 300px;
-	height:180px;
+	height:155px;
 }
 
 .control-panel{
@@ -21,9 +21,14 @@
 
 }
 
+.unselect-all{
+	border-left: 1px solid #efefef;
+	padding-left:15px;
+}
+
 .option-panel li{
 	border:1px dashed #e6e6e6;
-	padding:7px;
+	padding:5px;
 	cursor:pointer;
 }
 
@@ -35,3 +40,4 @@
 	.option-panel li.selected{
 		background-color: #B1BBA5;
 	}
+
