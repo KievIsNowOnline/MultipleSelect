@@ -26,7 +26,7 @@
 					<div class="option-panel">
 						<ul>
 
-							<li class="may-item" id="{{item.id}}" ng-repeat="item in items">{{item.value}}</li>
+							<li class="may-item" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items">{{item.value}} - {{item.selected}}</li>
 						</ul>
 					</div>
 				</div>		

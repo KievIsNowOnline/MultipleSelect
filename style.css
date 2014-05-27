@@ -32,6 +32,11 @@
 	cursor:pointer;
 }
 
+.option-panel li.selected{
+	background-color: #8D8D88;
+	color: #fff;
+}
+
 .option-panel li:hover{
 	background-color: #e7e7e7;
 }
