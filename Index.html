@@ -10,7 +10,7 @@
 
 	<body ng-app="myModule">
 		<div ng-controller="myController">
-
+			<h2>Games to buy</h2>
 			<div class="multi-select" items="items"></div>
 		</div>
 
@@ -18,15 +18,15 @@
 
 
 		<script type="text/ng-template" id="/multiSelectTemplate.html">
-		  <div class="select-me-container">
+		  <div class="multi-select-container">
 					<div class="control-panel">
-						<span class="select-all">Select All</span>
-						<span class="unselect-all">Unselect All</span>
+						<span class="select-all" ng-click="toggleSelectFlag(true)">Select All</span>
+						<span class="unselect-all" ng-click="toggleSelectFlag(false)">Unselect All</span>
 					</div>
 					<div class="option-panel">
 						<ul>
 
-							<li class="may-item" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items">{{item.value}} - {{item.selected}}</li>
+							<li class="multi-select-item" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items">{{item.value}}</li>
 						</ul>
 					</div>
 				</div>		

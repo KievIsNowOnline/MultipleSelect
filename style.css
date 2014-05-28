@@ -1,7 +1,18 @@
-.select-me-container{
+h2{
+	font-family:Segoe UI;
+	margin-bottom:3px;
+	color:#525252;
+}
+
+
+
+.multi-select-container{
 	border: 1px solid #efefef;
 	width: 300px;
 	height:155px;
+	font-family:Segoe UI;
+	font-size:13px;
+
 }
 
 .control-panel{
@@ -21,10 +32,17 @@
 
 }
 
+
+
 .unselect-all{
 	border-left: 1px solid #efefef;
 	padding-left:15px;
 }
+
+.unselect-all:hover, .select-all:hover{
+	background-color: #e7e7e7;
+}
+
 
 .option-panel li{
 	border:1px dashed #e6e6e6;
@@ -32,17 +50,16 @@
 	cursor:pointer;
 }
 
-.option-panel li.selected{
-	background-color: #8D8D88;
-	color: #fff;
-}
-
 .option-panel li:hover{
-	background-color: #e7e7e7;
+	background-color: #f8f8f8;
 }
 	
 
-	.option-panel li.selected{
-		background-color: #B1BBA5;
-	}
+
+.option-panel li.selected{
+	background-color: #E0F2F7;
+	
+}
+
+
 
