@@ -12,6 +12,11 @@
 		<div ng-controller="myController">
 			<h2>Games to buy</h2>
 			<div class="multi-select" items="items"></div>
+			<div>
+				<ul>
+					<li ng-repeat="item in items">{{item.selected}}</li>
+				</ul>
+			</div>
 		</div>
 
 
@@ -26,7 +31,7 @@
 					<div class="option-panel">
 						<ul>
 
-							<li class="multi-select-item" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items">{{item.value}}</li>
+							<li ng-click="toggleItem(item)" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items">{{item.value}}</li>
 						</ul>
 					</div>
 				</div>		

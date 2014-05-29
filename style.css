@@ -12,11 +12,14 @@ h2{
 	height:155px;
 	font-family:Segoe UI;
 	font-size:13px;
-
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 250px;
 }
 
 .control-panel{
-	margin: 3px 3px 3px 7px;
+	padding: 3px 3px 3px 7px;
+	background-color: #F5F5F5;
 }
 
 .control-panel span{
