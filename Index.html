@@ -10,11 +10,13 @@
 
 	<body ng-app="myModule">
 		<div ng-controller="myController">
-			<h2>Games to buy</h2>
+			<h2>Available Titles:</h2>
 			<div class="multi-select" items="items"></div>
+
+			<h2>Items in basket:</h2>
 			<div>
 				<ul>
-					<li ng-repeat="item in items">{{item.selected}}</li>
+					<li ng-repeat="item in items | filter: {selected:true}">{{item.value}}</li>
 				</ul>
 			</div>
 		</div>
@@ -27,6 +29,7 @@
 					<div class="control-panel">
 						<span class="select-all" ng-click="toggleSelectFlag(true)">Select All</span>
 						<span class="unselect-all" ng-click="toggleSelectFlag(false)">Unselect All</span>
+						<span class="unselect-all" ng-click="toggleSelectFlag(false)">Search</span>
 					</div>
 					<div class="option-panel">
 						<ul>

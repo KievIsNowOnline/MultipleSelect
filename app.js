@@ -5,7 +5,7 @@ app.controller('myController', function($scope){
 		{
 			id:1,
 			value:'One Piece: Pirate Warriors',
-			selected: false
+			selected: true
 		},
 		{
 			id:2,
@@ -24,27 +24,27 @@ app.controller('myController', function($scope){
 		},
 		{
 			id:5,
-			value:'Assassin\'s Creed',
+			value:'Uncharted 3: Drake\'s Deception',
 			selected: false
 		},
 		{
 			id:6,
-			value:'Gran Turismo 5 XL',
+			value:'Assassin\'s Creed: Brotherhood',
 			selected: false
 		},
 		{
 			id:7,
-			value:'One Piece: Pirate Warriors',
+			value:'Saint\'s Row 4',
 			selected: false
 		},
 		{
 			id:8,
-			value:'Assassin\'s Creed',
+			value:'Burnout: Paradise',
 			selected: false
 		},
 		{
 			id:9,
-			value:'Gran Turismo 5 XL',
+			value:'Grand Theft Auto: V',
 			selected: false
 		}
 
