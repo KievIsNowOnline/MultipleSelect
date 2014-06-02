@@ -32,6 +32,14 @@ h2{
 	cursor:pointer;
 }
 
+.search-panel input[type="text"]{
+width:80%;
+}
+
+.search-panel span{
+	padding:0 2px 0 2px;
+}
+
 .option-panel ul{
 	margin:0;
 	list-style: none;

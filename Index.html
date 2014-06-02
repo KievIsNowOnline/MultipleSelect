@@ -16,7 +16,7 @@
 			<h2>Items in basket:</h2>
 			<div>
 				<ul>
-					<li ng-repeat="item in items | filter: {selected:true}">{{item.value}}</li>
+					<li ng-repeat="item in items | filter: {selected:true} ">{{item.value}}</li>
 				</ul>
 			</div>
 		</div>
@@ -29,12 +29,17 @@
 					<div class="control-panel">
 						<span class="select-all" ng-click="toggleSelectFlag(true)">Select All</span>
 						<span class="unselect-all" ng-click="toggleSelectFlag(false)">Unselect All</span>
-						<span class="unselect-all" ng-click="toggleSelectFlag(false)">Search</span>
+						<span class="unselect-all" ng-click="toggleSearchFlag(false)">Search</span>
+					</div>
+					<div class="search-panel" ng-show="searchFlag">
+					<span>Search:
+					</span>
+							<input type="text" ng-model="keyword" />
 					</div>
 					<div class="option-panel">
 						<ul>
 
-							<li ng-click="toggleItem(item)" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items">{{item.value}}</li>
+							<li ng-click="toggleItem(item)" id="{{item.id}}" ng-class="{selected: item.selected}" ng-repeat="item in items | filter: {value:keyword}">{{item.value}}</li>
 						</ul>
 					</div>
 				</div>		

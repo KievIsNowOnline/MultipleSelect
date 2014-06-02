@@ -15,7 +15,9 @@ app.directive('multiSelect',function(){
 				})
 			}
 
+			$scope.keyword = "";
 
+			$scope.searchFlag = false;
 
 			$scope.toggleItem = function(item){
 				
@@ -30,7 +32,28 @@ app.directive('multiSelect',function(){
 					
 				});
 
-				//manual $digest() call. I dunno why this is needed.
+
+
+				
+			
+				
+			};
+
+			$scope.toggleSearchFlag = function(item){
+				//Have to control the filtering brought by the keyword
+				//Check if searchFlag is false, clear keyword
+				if($scope.searchFlag === true){
+					$scope.searchFlag = false;
+					$scope.keyword = "";
+				}
+				else{
+					$scope.searchFlag = true;
+					
+				}
+				
+
+
+				
 			
 				
 			}
